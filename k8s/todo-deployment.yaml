@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-app
+  namespace: todo-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todo-app
+  template:
+    metadata:
+      labels:
+        app: todo-app
+    spec:
+      containers:
+      - name: todo-app
+        image: todo-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000
+        env:
+          - name: MONGO_URL
+            value: "mongodb://mongo:27017/todosdb"

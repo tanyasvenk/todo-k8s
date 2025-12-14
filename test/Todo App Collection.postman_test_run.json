@@ -1,0 +1,132 @@
+{
+	"id": "5f873a47-17cd-48df-83bf-65266b43ebd4",
+	"name": "Todo App Collection",
+	"timestamp": "2025-12-14T10:58:04.470Z",
+	"collection_id": "43799934-73229ddd-01f9-432b-9377-af6228f602a7",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-12-14T10:58:03.810Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "4710b9b4-fcaa-44be-9601-e89fc4e8ff2a",
+			"name": "Create Todo",
+			"url": "http://127.0.0.1:52121/todos",
+			"time": 12,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "62507735-1eca-4d32-bb07-0f5399895802",
+			"name": "Get All Todos",
+			"url": "http://127.0.0.1:52121/todos",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "894d303c-3dda-4e6e-8114-198a3570ca0f",
+			"name": "Get Todo By ID",
+			"url": "http://127.0.0.1:52121/todos/693e983c16a3f0d67ea60af3",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4dea1c14-5e0d-430e-84a5-04b04facf9e5",
+			"name": "Update Todo By ID",
+			"url": "http://127.0.0.1:52121/todos/693e983c16a3f0d67ea60af3",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "57f83570-6a91-4ae7-9dfd-106fb0472dc2",
+			"name": "Delete Todo By ID",
+			"url": "http://127.0.0.1:52121/todos/693e983c16a3f0d67ea60af3",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 45,
+	"collection": {
+		"requests": [
+			{
+				"id": "4710b9b4-fcaa-44be-9601-e89fc4e8ff2a",
+				"method": "POST"
+			},
+			{
+				"id": "62507735-1eca-4d32-bb07-0f5399895802",
+				"method": "GET"
+			},
+			{
+				"id": "894d303c-3dda-4e6e-8114-198a3570ca0f",
+				"method": "GET"
+			},
+			{
+				"id": "4dea1c14-5e0d-430e-84a5-04b04facf9e5",
+				"method": "PUT"
+			},
+			{
+				"id": "57f83570-6a91-4ae7-9dfd-106fb0472dc2",
+				"method": "DELETE"
+			}
+		]
+	}
+}
